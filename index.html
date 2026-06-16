@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MetaMask Wallet Connect</title>
+    <title>Wallet Demo</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -14,27 +15,24 @@
 
             <img
                 src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg"
-                alt="MetaMask Logo"
+                alt="Logo"
                 class="logo"
             >
 
-            <h1>Connect with MetaMask</h1>
+            <h1>Wallet Demo</h1>
 
-            <p class="subtitle">
-                Connect your wallet to continue.
-            </p>
+            <p>Click the button to test JavaScript</p>
 
-            <button id="connectBtn">
-                Connect Wallet
-            </button>
+            <button id="connectBtn">Test Button</button>
 
-            <div id="walletAddress">
-                Wallet not connected
+            <div id="output">
+                Waiting...
             </div>
 
         </div>
     </div>
 
+    <!-- IMPORTANT: JS must be at bottom -->
     <script src="script.js"></script>
 
 </body>
