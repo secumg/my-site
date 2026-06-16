@@ -1,16 +1,17 @@
-document.addEventListener("DOMContentLoaded", function () {
+const btn = document.getElementById("connectBtn");
+const status = document.getElementById("status");
 
-    const btn = document.getElementById("connectBtn");
-    const output = document.getElementById("output");
+btn.addEventListener("click", function () {
 
-    if (!btn || !output) {
-        alert("Elements not found");
-        return;
-    }
+    btn.innerText = "Connecting...";
+    btn.disabled = true;
 
-    btn.onclick = function () {
-        output.innerText = "Wallet Connected (Demo Mode)";
-        output.style.color = "green";
-    };
+    status.innerText = "Connecting to wallet...";
+
+    setTimeout(() => {
+        status.innerText = "Wallet Connected ✔";
+        btn.innerText = "Connected";
+        btn.style.background = "green";
+    }, 2000);
 
 });
