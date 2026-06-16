@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallet Demo</title>
+    <title>Wallet Connect UI</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="card">
+<div class="container">
 
-            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg"
-                alt="Logo"
-                class="logo"
-            >
+    <div class="card">
 
-            <h1>Wallet Demo</h1>
+        <img class="logo"
+             src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg"
+             alt="MetaMask">
 
-            <p>Click the button to test JavaScript</p>
+        <h1>Wallet Connection</h1>
 
-            <button id="connectBtn">Test Button</button>
+        <p class="subtitle">Secure Web3 demo interface</p>
 
-            <div id="output">
-                Waiting...
-            </div>
+        <button id="connectBtn">
+            Connect Wallet
+        </button>
 
+        <div id="status">
+            Not connected
         </div>
+
     </div>
 
-    <!-- IMPORTANT: JS must be at bottom -->
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
